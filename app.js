@@ -6,8 +6,8 @@ const cors = require('cors');
 const corsOptions = {
   origin: ['http://127.0.0.1:3000', 'http://localhost:3000',
     'http://localhost:3001',
-    // 'http://eilyina.nomoredomains.rocks',
-    // 'https://eilyina.nomoredomains.rocks',
+    'http://eilyina.nomoredomains.rocks',
+    'https://eilyina.nomoredomains.rocks',
     'http://api.eilyina.nomoredomains.rocks',
     'https://api.eilyina.nomoredomains.rocks'],
 
