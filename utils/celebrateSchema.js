@@ -7,7 +7,7 @@ const movieCreateSchema = {
     director: Joi.string().required().min(2).max(200),
     duration: Joi.number().integer(),
     year: Joi.number().integer(),
-    description: Joi.string().required().min(2).max(500),
+    description: Joi.string().required().min(2).max(1000),
     image: Joi.string().required().pattern(urlRegExp),
     trailerLink: Joi.string().required().pattern(urlRegExp),
     thumbnail: Joi.string().required().pattern(urlRegExp),

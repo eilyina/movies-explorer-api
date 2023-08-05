@@ -103,6 +103,9 @@ module.exports.updateUser = (req, res, next) => {
         next(new NotFoundError('Данные не найдены'));
         return;
       }
+      if (err.code === 11000) {
+        next(new ConflictError('Пользователь с таким email уже зарегистрирован'));
+      }
 
       next(err);
     });
